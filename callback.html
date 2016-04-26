@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    function a(callback) {
+        alert("我是parent函数a！");
+        alert("我是parent函数a！");
+        callback();
+    }
+    function b() {
+        alert("我是回调函数b");
+    }
+    function c(){
+        alert("我是回调函数c");
+    }
+    function test(){
+        a(b);
+        a(c);
+    }
+</script>
+<button onClick=test()>click me</button>
+</body>
+</html>
