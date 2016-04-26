@@ -70,7 +70,7 @@ Menubar.light = function ( editor ) {
                 light.distance=50;
                 break;
             default :
-                light = new THREE.AmbientLight(0x545454,1.8);
+                light = new THREE.AmbientLight(0x545454);
                 name = "AmbientLight";
         }
         var object =new THREE.LightObject();
